@@ -1,0 +1,155 @@
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0 0 0 0rem;
+    background-color: rgba(0,20,25,1);
+    padding-right: 15px;
+    width: 99%;
+    border-bottom: 8px groove gray;
+    box-sizing:content-box;
+    z-index: 2; 
+}
+
+Nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0 0 0 0rem;
+    background-color: rgba(0,20,25,1);
+}
+
+.Navbar:hover {
+    background-color: rgba(0,20,25,1);
+    animation: flicker3 1s infinite;
+}
+
+.flicker {
+    animation: flicker2 0.05s infinite;
+}
+
+@keyframes flicker {
+    50% {
+        text-decoration: none;
+    }
+}
+
+@keyframes flicker2 {
+    50% {
+        opacity:20%;
+    }
+}
+
+@keyframes flicker3 {
+    0% {
+        background-color: rgba(20,20,25,1);
+        border-bottom: 8px groove brown;
+    }
+
+    50% {
+        background-color: rgba(0,20,25,1);
+        border-bottom: 8px groove orangered;
+    }
+
+    100% {
+        background-color: rgba(20,20,25,1);
+        border-bottom: 8px groove brown;
+    }
+
+}
+
+@keyframes flicker4 {
+    0% {
+
+    }
+
+    30% {
+        color: pink;
+    }
+
+    60% {
+        color: lawngreen;
+    }
+
+}
+
+
+.item {
+    color:white;
+    padding-right:1vw;
+    font-family: 'Lucida Console';
+    font-weight:600;
+    font-size:10px;
+    z-index: 3;
+}
+
+    .item:hover {
+        text-decoration: underline solid 1px pink;
+        animation: flicker 0.5s infinite;
+        cursor:pointer;
+    }
+
+.item2 {
+    color: white;
+    padding-right: 1vw;
+    font-family: 'Lucida Console';
+    font-weight: 600;
+    font-size: 10px;
+
+
+}
+
+    .item:hover {
+        text-decoration: underline solid 1px pink;
+        animation: flicker 1s infinite;
+        cursor: pointer;
+    }
+
+NavLink:hover{
+    color: red;
+}
+
+.brand {
+    font-family: 'Lucida Console';
+    font-size: 1.5rem;
+    min-width: 5vw;
+    padding-left: 10px;
+    opacity: 90%;
+    cursor: pointer;
+    color: ghostwhite;
+    animation: flicker4 3s infinite;
+    z-index: 3;
+}
+
+.brand:hover {
+    color: white;
+}
+
+.space {
+    min-width: 48vw;
+    z-index:-1;
+}
+
+
+a {
+    z-index: 3;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .item {
+        padding-left: 10px;
+    }
+
+    .item2 {
+        visibility: hidden;
+        z-index: 0;
+        height: 0px;
+    }
+
+    .space {
+        width: 1vw;
+    }
+}
+
+

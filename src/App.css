@@ -1,38 +1,77 @@
 .App {
-  text-align: center;
+    background-image: url(https://4.bp.blogspot.com/-puo91nFAERY/WYrCeXd_npI/AAAAAAAAt_E/Cnu6v0Op33MwkTy4DllFuo7Ocur8m2X8ACLcBGAs/s1600/data-breach-hacking.png);
+    display: grid;
+    width: 100%;
+    height: 230vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.toggle {
+
+    position:absolute;
+    padding-top:400px;
+    right:0px;
+    z-index: 1;
+    opacity: 20%;
+    width:8%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toggle:hover {
+    opacity: 100%;
+    animation: bounce 1s infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input {
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    padding-left: 10px;
+    z-index: 1;
+    width: 49%;
+    box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.output {
+    position: absolute;
+    top: 120px;
+    right: 0px;
+    padding-right: 10px;
+    z-index: 1;
+    width: 49%;
+    box-sizing: border-box;
+    z-index: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes bounce {
+    0% {
+        padding-left: 2px;
+    }
+
+    50% {
+        padding-left: 8px;
+    }
+
+    100% {
+        padding-left: 2px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .toggle {
+        visibility: hidden;
+    }
+
+    .guide {
+        visibility: visible;
+    }
+}
+
+
+.bg {
+
+    background-color:red;
+    z-index: -3;
+    bottom: 0px;
+    left: 0px;
+    color: white;
 }
