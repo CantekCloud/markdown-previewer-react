@@ -1,3 +1,76 @@
 .toggler {
+    color: #dd1313
+}
 
+table {
+    border: 1px solid pink;
+    background-color: navajowhite;
+    width: 100%;
+    color: black;
+    font-family: Arial;
+    opacity: 86%;
+}
+
+tr:hover {
+   filter: brightness(0.9); 
+}
+
+th {
+    background-color: darkslateblue;  
+    color: navajowhite;
+    font-size: 20px;
+    width:100%;
+}
+
+td {
+    border: 1px solid pink;
+    background-color: navajowhite;
+    width: 50%;
+    
+    text-align: center;
+    
+}
+
+.tag {
+    cursor: pointer;
+    font-family: 'Courier New';
+    color: pink;
+    background-color: black;
+    width: 1%;
+    
+}
+
+    .tag:hover {
+        color: white;
+    }
+
+.tag2 {
+    cursor: pointer;
+    font-family: 'Courier New';
+    color: pink;
+    background-color: black;
+    font-size: 10px;
+}
+
+    .tag2:hover {
+        color: white;
+    }
+
+.text-item {
+    width: 150px;
+    font-size: 35px;
+}
+
+.text-item2 {
+    width: 100px;
+    font-size: 35px;
+}
+
+img {
+    width: 150px;
+    height: 100px;
+}
+
+blockquote {
+    background-color:gray;
 }

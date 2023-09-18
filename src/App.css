@@ -1,5 +1,6 @@
 .App {
-    background-image: url(https://4.bp.blogspot.com/-puo91nFAERY/WYrCeXd_npI/AAAAAAAAt_E/Cnu6v0Op33MwkTy4DllFuo7Ocur8m2X8ACLcBGAs/s1600/data-breach-hacking.png);
+    /*background-image: url(https://4.bp.blogspot.com/-puo91nFAERY/WYrCeXd_npI/AAAAAAAAt_E/Cnu6v0Op33MwkTy4DllFuo7Ocur8m2X8ACLcBGAs/s1600/data-breach-hacking.png); */
+    background-image: linear-gradient(to top, black, red, darkslategrey, black);
     display: grid;
     width: 100%;
     height: 230vh;
@@ -8,7 +9,7 @@
 
 .toggle {
 
-    position:absolute;
+    position:fixed;
     padding-top:400px;
     right:0px;
     z-index: 1;
